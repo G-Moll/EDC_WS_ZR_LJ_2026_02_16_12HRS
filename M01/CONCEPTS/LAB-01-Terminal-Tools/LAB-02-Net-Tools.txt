@@ -1,0 +1,17 @@
+// DIAGNOSTICS Y DATA TRANSFERENCE
+
+// Connectivity verification
+$ ping google.com
+
+// HTTP request
+$ curl https://api.github.com/users/octocat
+
+// On-going download
+$ wget -c https://someurl
+
+
+// Local Net description and Net Devices
+// Windows
+$ ipconfig
+// Unix
+$ ifconfig

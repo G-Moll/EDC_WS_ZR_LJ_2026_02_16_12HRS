@@ -1,0 +1,27 @@
+// BASIC NAVIGATION
+
+// Show current directory
+$ pwd
+
+// List files
+$ ls
+$ ls -l
+$ ls -la
+
+// Change Directories
+// ~ is the HOME/Initial directory
+$ cd ~/proyectos
+
+// Create a new folder
+$ mkdir new_directory
+
+// Create a new empty file
+$ touch some_file.txt
+
+// Rename file
+$ mv current_file.txt new_name_file.txt
+
+// Delete file
+$ rm some_file.txt
+$ rm -r some_folder
+$ rm -rf some_folder

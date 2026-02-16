@@ -1,0 +1,16 @@
+// Create the following Website Structure
+// just using bash commands:
+
+    web_site
+    │
+    ├───css
+    │   └───styles.css
+    │
+    ├───imgs
+    │   └───logo.png
+    │
+    ├───js
+    │   └───script.js
+    │
+    ├───favicon.ico
+    └───index.html
