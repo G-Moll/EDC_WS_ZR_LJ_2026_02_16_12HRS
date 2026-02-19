@@ -1,0 +1,14 @@
+// CONFIGURE GIT/GITHUB
+// 1) Create SSH key pair locally
+    - Git-bash as admin
+    - Private key   Client (PC)         .ssh_abc
+    - Public key    Server (Github)     .ssh_abc.pub
+
+// 2) Copy Public SSH key to Github - Gitlab/AWS
+    - Control Panel
+    - ssh hfdlsakdhfksajhfdkjsahfdlksaj user@gmail.com
+
+// 3) Connect Git Client (PC) to Git Server (Github)
+    - re-assign origin and user
+    - push
+    - grant permissions: yes

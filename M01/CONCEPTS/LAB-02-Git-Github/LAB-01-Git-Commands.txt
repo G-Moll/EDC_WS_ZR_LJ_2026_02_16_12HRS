@@ -1,0 +1,20 @@
+// BASIC GIT
+
+// Start a project
+$ git init
+
+// Add files to Stage Area
+$ git add notes.txt
+$ git add css
+$ git add -a
+$ git add .
+
+// Current project status
+$ git status
+
+// Add files to Commit Area
+$ git commit -m "Some commit message"
+
+// Show log history
+$ git log
+$ git log --oneline -4
