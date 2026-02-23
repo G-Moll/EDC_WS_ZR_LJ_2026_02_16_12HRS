@@ -1,0 +1,18 @@
+// Git Workflow
+// Paso 1
+    1) Crear un repositorio local
+    2) Agregar, modificar, elimimar, archivos
+    3) Hacer add, commit y push
+
+    // Subir cambios
+    Repo Local          Repo Remota
+    Computadora_local > Servidor_Git
+
+// Paso 2
+    1) En una segunda computadora
+    2) Clonar el repositorio remoto
+    3) Agregar, modificar, elimimar, archivos
+    4) Hacer add, commit y push
+
+// Paso 3
+    1) Actualizar los cambios de la segunda computadora a la primera

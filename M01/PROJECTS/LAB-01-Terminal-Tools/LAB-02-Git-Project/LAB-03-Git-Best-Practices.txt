@@ -1,0 +1,19 @@
+// Git workflow, archivos modificados o nuevos
+1) Checar si hay cambios en los archivos
+    $ git status
+2) Agregarlos para seguir su historial
+    $ git add .
+3) Agregarlos al commit (para que se puedan subir)
+    $ git commit -m "Descripción"
+4) Enviarlos al repo remoto
+    $ git push
+
+
+// Git workflow, seguimiento repo remoto
+1) Checar el directorio de trabajo
+    $ cd "ruta_del_proyecto"
+2) Ver el estado del repo local
+    $ git status
+3) Actualizar según el repo remoto
+    $ git fetch
+    $ git pull

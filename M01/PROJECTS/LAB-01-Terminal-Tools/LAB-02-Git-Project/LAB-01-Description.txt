@@ -1,0 +1,13 @@
+// Git Workflow Práctica
+1) Crear un repositorio local (Proyecto Web)
+    - Agregar, modificar, elimimar, archivos
+    - Hacer add, commit y push
+2) Configurar Cuenta Github
+    - Si es neceario:
+        - Crear llaves ssh
+        - Configurarlas en el Cliente y en el Servidor
+3) Sincronizar cambios en repositorios local y  remoto
+    - Subir los cambios del Cliente al Servidor
+    - Verificar que se reflejen los cambios
+
+
