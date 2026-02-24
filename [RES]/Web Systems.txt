@@ -1,0 +1,13 @@
+Desarrollo de Sistemas Web
+- Terminal
+- Git (Workflow)
+    > master/main
+    > developer/feature
+    > hotfix
+- Vanilla JavaScript (HTML/CSS)
+    - ES5/ES6
+- Node
+    - React
+    - Express
+- NoSQL Databases (MongoDB/CouchDB/Firebase)
+    - JavaScript
