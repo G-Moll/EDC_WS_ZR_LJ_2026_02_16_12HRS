@@ -2,30 +2,30 @@
 function sayHello( name ) {
     return "Hello " + name;
 }
-// console.log( sayHello( "Joshua" ) );
+console.log( sayHello( "Joshua" ) );
 
 function calculateAreafn( width, height ) {
     return width * height;
 }
 var area = calculateAreafn( 100, 200 );
-// console.log( area );
+console.log( area );
 
 var sample = function() {
     return 10;
 }
-// console.log(sample());
+console.log(sample());
 
 
 // ES6 Arrow Functions
 let sayHelloArrow = () => {
     return "Hello Joshua";
 }
-// console.log(sayHelloArrow() );
+console.log(sayHelloArrow() );
 
 let calculateAreaArrow = ( width, height ) => {
     return width * height;
 }
-// console.log( calculateAreaArrow( 1000, 2000 ) );
+console.log( calculateAreaArrow( 1000, 2000 ) );
 
 let sayHelloSimplified = name => "hello " + name;
 let calculateAreaSimplified = ( width, height ) => width * height;

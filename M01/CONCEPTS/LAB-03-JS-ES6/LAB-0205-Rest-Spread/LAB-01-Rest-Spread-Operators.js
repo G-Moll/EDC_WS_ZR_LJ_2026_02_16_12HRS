@@ -25,7 +25,7 @@ var job = person.job;
 // ES6
 // var { name, age, hobby, job } = person;
 var { name, age, ...elseProperties } = person;
-// console.log( name, age, elseProperties );
+console.log( name, age, elseProperties );
 
 // ES5
 var walk = actions.walk;
@@ -33,8 +33,8 @@ var multiply = actions.multiply;
 
 // ES6
 var { walk, ...elseActions } = actions;
-// console.log( walk );
-// console.log( elseActions );
+console.log( walk );
+console.log( elseActions );
 
 
 // Improved Object
@@ -43,7 +43,7 @@ let personImproved = {
     ...person,
     ...actions
 }
-// console.log( personImproved );
+console.log( personImproved );
 
 let allNumbers = [ Number.POSITIVE_INFINITY, ...oddNumbers, ...evenNumbers, Number.NEGATIVE_INFINITY ];
 console.log( allNumbers );
