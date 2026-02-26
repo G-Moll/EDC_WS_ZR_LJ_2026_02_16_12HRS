@@ -1,16 +1,15 @@
-Reto 5: Gestión de un Carrito de Compras
+RETO 5: GESTIÓN DE UN CARRITO DE COMPRAS
 Problema general: Un usuario está realizando compras en línea y necesita administrar los artículos en su carrito.
 
 Tareas a resolver:
+    - Agregar un nuevo producto al carrito del usuario.
+    - Calcular el precio total de los productos en el carrito.
+    - Aplicar un cupón de descuento del 10% si el total es mayor a $100.
+    - Mostrar un resumen del carrito con los nombres de los productos y el total a pagar (con o sin descuento).
 
-Agregar un nuevo producto al carrito del usuario.
-Calcular el precio total de los productos en el carrito.
-Aplicar un cupón de descuento del 10% si el total es mayor a $100.
-Mostrar un resumen del carrito con los nombres de los productos y el total a pagar (con o sin descuento).
-
-// Datos para el ejercicio
+Datos de Entrada:
 let userCart = [
-  { name: 'Laptop', price: 800, quantity: 1 },
-  { name: 'Mouse', price: 25, quantity: 2 }
+    { name: 'Laptop', price: 800, quantity: 1 },
+    { name: 'Mouse', price: 25, quantity: 2 }
 ];
 const newProduct = { name: 'Keyboard', price: 60, quantity: 1 };
