@@ -1,0 +1,21 @@
+Reto 1: Análisis de Ventas de Productos
+Problema general: Una pequeña tienda necesita analizar el rendimiento de sus productos para tomar decisiones de inventario.
+
+Tareas a resolver:
+
+Identificar los 2 productos más vendidos (con mayor cantidad de ventas).
+Identificar los 2 productos menos vendidos (con menor cantidad de ventas).
+Calcular el precio total de todos los productos en inventario (precio * cantidad).
+Crear un resumen para cada producto que indique "Alta Demanda" si vendió más de 50 unidades, o "Baja Demanda" en caso contrario.
+Datos de entrada:
+
+// Datos para el ejercicio
+const products = [
+  { id: 1, name: 'Laptop', price: 800, quantity: 45 },
+  { id: 2, name: 'Mouse', price: 25, quantity: 120 },
+  { id: 3, name: 'Keyboard', price: 60, quantity: 80 },
+  { id: 4, name: 'Monitor', price: 200, quantity: 30 },
+  { id: 5, name: 'Headset', price: 50, quantity: 95 }
+];
+
+

@@ -1,0 +1,25 @@
+Reto 3: Historial de Compras de Usuarios
+Problema general: Una plataforma de e-commerce quiere personalizar la experiencia de sus usuarios analizando su historial de compras.
+
+Tareas a resolver:
+
+Para un usuario dado, listar todos los nombres de los productos que ha comprado.
+Calcular el gasto total de un usuario específico.
+Determinar si un usuario específico ha comprado un producto en particular (por ejemplo, 'laptop').
+Crear un perfil de usuario que muestre su nombre y la cantidad total de productos comprados.
+
+
+// Datos para el ejercicio
+const users = [
+  { userId: 1, name: 'Ana', purchases: ['laptop', 'mouse', 'headset'] },
+  { userId: 2, name: 'Carlos', purchases: ['keyboard', 'monitor'] },
+  { userId: 3, name: 'María', purchases: ['laptop', 'monitor', 'mouse', 'usb'] }
+];
+const products = [
+  { productId: 1, name: 'laptop', price: 800 },
+  { productId: 2, name: 'mouse', price: 25 },
+  { productId: 3, name: 'headset', price: 50 },
+  { productId: 4, name: 'keyboard', price: 60 },
+  { productId: 5, name: 'monitor', price: 200 },
+  { productId: 6, name: 'usb', price: 15 }
+];

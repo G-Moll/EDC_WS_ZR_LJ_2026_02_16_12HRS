@@ -1,0 +1,17 @@
+Reto 4: Control de Inventario de una Librería
+Problema general: Una librería necesita gestionar su stock y saber qué libros deben ser reordenados o están en exceso.
+
+Tareas a resolver:
+
+Identificar los libros con stock bajo (menos de 5 unidades) que necesitan reabastecerse.
+Identificar los libros con stock alto (más de 15 unidades) que podrían tener una promoción.
+Calcular el valor total del inventario de la librería.
+Actualizar el precio de un libro específico (por ejemplo, 'El Quijote') aplicando un 10% de descuento.
+
+// Datos para el ejercicio
+let inventory = [
+  { id: 1, title: 'Cien años de soledad', author: 'García Márquez', price: 15, stock: 3 },
+  { id: 2, title: 'El Quijote', author: 'Cervantes', price: 20, stock: 18 },
+  { id: 3, title: '1984', author: 'George Orwell', price: 12, stock: 7 },
+  { id: 4, title: 'El Principito', author: 'Saint-Exupéry', price: 10, stock: 25 }
+];

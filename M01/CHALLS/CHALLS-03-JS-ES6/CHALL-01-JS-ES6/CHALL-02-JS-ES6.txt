@@ -1,0 +1,19 @@
+Reto 2: Evaluación de Desempeño de Empleados
+Problema general: El departamento de RRHH debe evaluar el desempeño de los empleados para determinar bonificaciones.
+
+Tareas a resolver:
+
+Calcular el puntaje promedio de cada empleado basado en sus evaluaciones.
+Filtrar a los empleados que tengan un puntaje promedio mayor o igual a 85 (empleados con bono).
+Filtrar a los empleados que tengan al menos una calificación menor a 70 (necesitan mejorar).
+Generar un mensaje para cada empleado que incluya su nombre y si califica para el bono ("Sí" o "No").
+Datos de entrada:
+
+// Datos para el ejercicio
+const employees = [
+  { name: 'Elena', scores: [90, 88, 75, 92] },
+  { name: 'Luis', scores: [68, 72, 70, 65] },
+  { name: 'Sofía', scores: [95, 94, 98, 91] },
+  { name: 'Miguel', scores: [78, 82, 80, 79] }
+];
+
