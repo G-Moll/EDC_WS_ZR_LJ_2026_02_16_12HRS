@@ -1,4 +1,4 @@
-RETO 3: HISTORIAL DE COMPRAS DE USUARIOS
+CHALLENGE 03: HISTORIAL DE COMPRAS DE USUARIOS
 Problema general: Una plataforma e-commerce quiere personalizar la experiencia de sus usuarios analizando su historial de compras.
 
 Tareas a resolver:

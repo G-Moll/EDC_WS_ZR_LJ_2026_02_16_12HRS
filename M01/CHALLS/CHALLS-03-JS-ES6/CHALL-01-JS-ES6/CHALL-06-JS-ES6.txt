@@ -1,0 +1,12 @@
+CHALLENGE 06: REGISTRO DE TEMPERATURAS DIARIAS
+Problema general: Una estación meteorológica registra las temperaturas de la semana y necesita generar un reporte.
+
+Tareas a resolver:
+    - Calcular la temperatura promedio de la semana.
+    - Encontrar la temperatura máxima y mínima de la semana.
+    - Identificar los días (por su índice o nombre) que estuvieron por encima del promedio.
+    - Clasificar cada día como "Cálido" si la temperatura fue >= 25°C, o "Fresco" si fue menor.
+
+Datos de Entrada:
+const weeklyTemperatures = [ 22, 25, 27, 23, 26, 28, 21 ];
+const dayNames = [ 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo' ];

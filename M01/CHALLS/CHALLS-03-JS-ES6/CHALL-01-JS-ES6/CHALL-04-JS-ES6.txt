@@ -1,4 +1,4 @@
-RETO 4: CONTROL DE INVENTARIO DE UNA LIBRERÍA
+CHALLENGE 04: CONTROL DE INVENTARIO DE UNA LIBRERÍA
 Problema general: Una librería necesita gestionar su stock y saber qué libros deben ser reordenados o están en exceso.
 
 Tareas a resolver:

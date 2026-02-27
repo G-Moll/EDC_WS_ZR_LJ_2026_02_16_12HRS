@@ -1,4 +1,4 @@
-RETO 2: EVALUACIÓN DE DESEMPEÑO DE EMPLEADOS
+CHALLENGE 02: EVALUACIÓN DE DESEMPEÑO DE EMPLEADOS
 Problema general: El departamento de RRHH debe evaluar el desempeño de los empleados para determinar bonificaciones.
 
 Tareas a resolver:

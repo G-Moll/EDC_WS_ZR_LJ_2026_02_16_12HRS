@@ -1,4 +1,4 @@
-RETO 5: GESTIÓN DE UN CARRITO DE COMPRAS
+CHALLENGE 05: GESTIÓN DE UN CARRITO DE COMPRAS
 Problema general: Un usuario está realizando compras en línea y necesita administrar los artículos en su carrito.
 
 Tareas a resolver:
