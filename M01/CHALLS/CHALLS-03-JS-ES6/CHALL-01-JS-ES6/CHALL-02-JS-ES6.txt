@@ -1,7 +1,8 @@
 CHALLENGE 02: EVALUACIÓN DE DESEMPEÑO DE EMPLEADOS
-Problema general: El departamento de RRHH debe evaluar el desempeño de los empleados para determinar bonificaciones.
+Problema General:
+El departamento de RRHH debe evaluar el desempeño de los empleados para determinar bonificaciones.
 
-Tareas a resolver:
+Tareas a Resolver:
     - Calcular el puntaje promedio de cada empleado basado en sus evaluaciones.
     - Filtrar a los empleados que tengan un puntaje promedio mayor o igual a 85 (empleados con bono).
     - Filtrar a los empleados que tengan al menos una calificación menor a 70 (necesitan mejorar).

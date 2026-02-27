@@ -1,7 +1,8 @@
 CHALLENGE 04: CONTROL DE INVENTARIO DE UNA LIBRERÍA
-Problema general: Una librería necesita gestionar su stock y saber qué libros deben ser reordenados o están en exceso.
+Problema General:
+Una librería necesita gestionar su stock y saber qué libros deben ser reordenados o están en exceso.
 
-Tareas a resolver:
+Tareas a Resolver:
     - Identificar los libros con stock bajo (menos de 5 unidades) que necesitan reabastecerse.
     - Identificar los libros con stock alto (más de 15 unidades) que podrían tener una promoción.
     - Calcular el valor total del inventario de la librería.

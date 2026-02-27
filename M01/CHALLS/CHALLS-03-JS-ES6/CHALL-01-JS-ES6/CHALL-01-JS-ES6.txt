@@ -1,7 +1,8 @@
 CHALLENGE 01: ANÁLISIS DE VENTAS DE PRODUCTOS
-Problema general: Una pequeña tienda necesita analizar el rendimiento de sus productos para tomar decisiones de inventario.
+Problema General:
+Una pequeña tienda necesita analizar el rendimiento de sus productos para tomar decisiones de inventario.
 
-Tareas a resolver:
+Tareas a Resolver:
     - Identificar los 2 productos más vendidos (con mayor cantidad de ventas).
     - Identificar los 2 productos menos vendidos (con menor cantidad de ventas).
     - Calcular el precio total de todos los productos en inventario (precio * cantidad).

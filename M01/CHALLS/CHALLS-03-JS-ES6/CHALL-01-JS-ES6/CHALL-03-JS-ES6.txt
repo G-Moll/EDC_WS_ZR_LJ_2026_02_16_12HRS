@@ -1,7 +1,8 @@
 CHALLENGE 03: HISTORIAL DE COMPRAS DE USUARIOS
-Problema general: Una plataforma e-commerce quiere personalizar la experiencia de sus usuarios analizando su historial de compras.
+Problema General:
+Una plataforma e-commerce quiere personalizar la experiencia de sus usuarios analizando su historial de compras.
 
-Tareas a resolver:
+Tareas a Resolver:
     - Para un usuario dado, listar todos los nombres de los productos que ha comprado.
     - Calcular el gasto total de un usuario específico.
     - Determinar si un usuario específico ha comprado un producto en particular (por ejemplo, 'laptop').

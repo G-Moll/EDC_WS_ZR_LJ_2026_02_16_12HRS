@@ -1,7 +1,8 @@
 CHALLENGE 06: REGISTRO DE TEMPERATURAS DIARIAS
-Problema general: Una estación meteorológica registra las temperaturas de la semana y necesita generar un reporte.
+Problema General:
+Una estación meteorológica registra las temperaturas de la semana y necesita generar un reporte.
 
-Tareas a resolver:
+Tareas a Resolver:
     - Calcular la temperatura promedio de la semana.
     - Encontrar la temperatura máxima y mínima de la semana.
     - Identificar los días (por su índice o nombre) que estuvieron por encima del promedio.

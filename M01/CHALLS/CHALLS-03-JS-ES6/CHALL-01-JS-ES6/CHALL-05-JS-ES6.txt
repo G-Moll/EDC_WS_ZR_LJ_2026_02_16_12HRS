@@ -1,7 +1,8 @@
 CHALLENGE 05: GESTIÓN DE UN CARRITO DE COMPRAS
-Problema general: Un usuario está realizando compras en línea y necesita administrar los artículos en su carrito.
+Problema General:
+Un usuario está realizando compras en línea y necesita administrar los artículos en su carrito.
 
-Tareas a resolver:
+Tareas a Resolver:
     - Agregar un nuevo producto al carrito del usuario.
     - Calcular el precio total de los productos en el carrito.
     - Aplicar un cupón de descuento del 10% si el total es mayor a $100.
