@@ -10,9 +10,9 @@ Tareas a Resolver:
 
 Datos de Entrada:
 const products = [
-  { id: 1, name: 'Laptop', price: 800, quantity: 45 },
-  { id: 2, name: 'Mouse', price: 25, quantity: 120 },
-  { id: 3, name: 'Keyboard', price: 60, quantity: 80 },
-  { id: 4, name: 'Monitor', price: 200, quantity: 30 },
-  { id: 5, name: 'Headset', price: 50, quantity: 95 }
+    { id: 1, name: 'Laptop', price: 800, quantity: 45 },
+    { id: 2, name: 'Mouse', price: 25, quantity: 120 },
+    { id: 3, name: 'Keyboard', price: 60, quantity: 80 },
+    { id: 4, name: 'Monitor', price: 200, quantity: 30 },
+    { id: 5, name: 'Headset', price: 50, quantity: 95 }
 ];
