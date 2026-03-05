@@ -11,15 +11,15 @@ let promise = new Promise( function( resolve, reject ) {
         Math.random() >= 0.5 ?
             resolve( "Promise resolved" ) :
             reject( "Promise rejected" ) ;
-    }, 2000 );
+    }, 10 );
 });
 
 promise
     .then( function( data ) {
-        console.log( data );
+        console.log( "Success operation", data );
     })
     .catch( function ( error ) {
-        console.log( error );
+        console.log( "Some error",error );
     });
 
     // console.log( "Hello" );

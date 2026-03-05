@@ -46,4 +46,4 @@ let personImproved = {
 console.log( personImproved );
 
 let allNumbers = [ Number.POSITIVE_INFINITY, ...oddNumbers, ...evenNumbers, Number.NEGATIVE_INFINITY ];
-console.log( allNumbers );
+console.log(allNumbers);

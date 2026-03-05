@@ -9,6 +9,7 @@ var user = {
 };
 // if (user.hobbies.suite.number !== undefined || user.hobbies.suite.number !== null )
 // console.log( user.hobbies );
-console.log( user?.hobbies?.suite?.number );
+console.log( user.hobbies?.abc );
+// console.log( user?.hobbies?.suite?.number );
 // console.log( user.address.floor );
 
