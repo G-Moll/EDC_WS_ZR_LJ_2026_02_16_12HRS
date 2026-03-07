@@ -55,6 +55,10 @@ let tasksMixed = tasks
        return task.pending;
     })
     .map( function( task, index ) {
-        return ( index + 1 ) + " " + ( task.title );
-    })    ;
-console.log( tasksMixed );
+        return ( index + 1 ) + " - " + ( task.title );
+    })
+    .forEach( function( shortenTask, index ) {
+        console.log( shortenTask );
+    })
+    ;
+// console.log( tasksMixed );
