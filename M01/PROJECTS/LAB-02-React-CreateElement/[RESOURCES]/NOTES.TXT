@@ -1,0 +1,12 @@
+// React Intallation
+https://react.dev/learn/installation
+
+// Base Template
+https://gist.githubusercontent.com/gaearon/0275b1e1518599bbeafcde4722e79ed1/raw/db72dcbf3384ee1708c4a07d3be79860db04bff0/example.html
+
+// Links
+<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+// Don't use this in production:
+<script src="https://unpkg.com/@babel/standalone/babel.min.js">
