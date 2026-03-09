@@ -1,7 +1,7 @@
 function App() {
     return React.createElement(
         "div",
-        { id: "wrapper" },
+        { id: "wrapper", className: "wrapper" },
         React.createElement( Header ),
         React.createElement( Content ),
         React.createElement( Footer )
@@ -11,7 +11,7 @@ function App() {
 function Header() {
     return React.createElement(
         "header",
-        { id: "header" },
+        { id: "header", className: "header" },
         React.createElement(
             "h2", null, "Header component on React"
         )
@@ -20,9 +20,9 @@ function Header() {
 function Content() {
     return React.createElement(
         "div",
-        { id: "content" },
-        React.createElement( "h1", null, "Hello Joshua n React" ),
-        React.createElement( "img", { src: "imgs/js.jpg" }, null ),
+        { id: "content", className: "content" },
+        React.createElement( "h1", null, "Hello Joshua on React" ),
+        React.createElement( "img", { src: "imgs/js-es6.jpg" }, null ),
         React.createElement( "p", null, "Lorem ipsum" )
     );
 }
@@ -30,7 +30,7 @@ function Content() {
 function Footer() {
     return React.createElement(
         "footer",
-        { id: "footer" },
+        { id: "footer", className: "footer" },
         React.createElement( "p", {}, "Copyright Pilares 2026" )
     );
 }
