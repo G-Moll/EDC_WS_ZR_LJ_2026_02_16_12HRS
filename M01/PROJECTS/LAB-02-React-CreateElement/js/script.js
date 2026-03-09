@@ -22,7 +22,7 @@ function Content() {
         "div",
         { id: "content", className: "content" },
         React.createElement( "h1", null, "Hello Joshua on React" ),
-        React.createElement( "img", { src: "imgs/js-es6.jpg" }, null ),
+        React.createElement("img", { src: "imgs/js-es6.jpg", className: "content-img" }, null ),
         React.createElement( "p", null, "Lorem ipsum" )
     );
 }
