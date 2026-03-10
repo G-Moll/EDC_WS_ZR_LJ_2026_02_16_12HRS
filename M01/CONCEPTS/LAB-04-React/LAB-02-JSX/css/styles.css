@@ -1,0 +1,14 @@
+* {
+    font-family: Calibri;
+    font-weight: normal;
+}
+.wrapper, .header, .content, .footer {
+    padding: 8px;
+    margin: 8px;
+}
+.wrapper { border: solid 4px #FFC90E; }
+.header { border: solid 4px#B5E61D; }
+.content { border: solid 4px #00A2E8; }
+.footer { border: solid 4px#FFAEC9; }
+
+.content-img { display: block; margin: 8px auto; padding: 8px; background-color: white; box-shadow: 0 2px 3px gray; }
