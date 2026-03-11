@@ -1,0 +1,19 @@
+// Check Node, NPM, NPM installation
+$ which node
+$ node -v
+$ which npm
+$ which npx
+
+// Create a React App using Vite
+$ npx create-vite@latest LAB-03-Vite
+    Choose main features:
+        - React
+        - Vanilla JS
+// Change to project directory
+$ cd LAB-03-Vite
+
+// Install dependencies
+$ npm install
+
+// Run applicaciones
+$ npm run dev

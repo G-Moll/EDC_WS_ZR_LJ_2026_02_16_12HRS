@@ -1,0 +1,7 @@
+index.html
+    js/modules/
+        users.js
+        login.js
+        payments.js
+        clients.js
+    app.js
