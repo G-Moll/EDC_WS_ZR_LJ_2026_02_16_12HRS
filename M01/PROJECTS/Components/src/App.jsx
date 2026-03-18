@@ -1,4 +1,5 @@
- import Card from "./components/Card";
+import Card from "./components/Card";
+import Counter from "./components/Counter/Counter";
 
 function App() {
     return (
@@ -7,6 +8,11 @@ function App() {
             <Card name="React" age={ 10 }></Card>
             <Card name="JavaScript" age={ 20 } />
             <Card name="Java" age={ 25 } />
+
+            <hr />
+
+            <Counter />
+
         </div>);
 }
 

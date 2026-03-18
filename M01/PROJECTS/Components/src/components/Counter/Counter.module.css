@@ -1,0 +1,13 @@
+.counter {
+    height: 20px;
+    background: orange;
+}
+
+.increment {
+    background-color: teal;
+    color: white;
+}
+.decrement {
+    background-color: crimson;
+    color: white;
+}
