@@ -29,8 +29,7 @@ function UsersList() {
         <div className={ styles.userslist }>
             <h2>Lista de usuarios</h2>
             <ul>
-                { users.map(
-                    user => (
+                { users.map( user => (
                         <li key={ user.id }>
                             { user.name } - { user.email }
                         </li>
