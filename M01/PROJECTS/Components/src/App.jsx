@@ -1,7 +1,12 @@
+import { useState } from "react";
 import Card from "./components/Card";
 import Counter from "./components/Counter/Counter";
+import UsersList from "./components/UsersList/UsersList";
+
 
 function App() {
+    const [ showUsers, setShowUsers ] = useState( false );
+    
     return (
         <div>
             <Card name="Joshua" age={ 30 } />
@@ -13,6 +18,10 @@ function App() {
 
             <Counter />
 
+            <hr />
+            <button onClick={ () => setShowUsers( ! showUsers ) }> { showUsers ? "ocultar" : "mostrar"}
+            </button>
+            { showUsers && <UsersList />}
         </div>);
 }
 
