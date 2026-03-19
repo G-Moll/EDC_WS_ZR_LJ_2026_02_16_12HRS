@@ -6,6 +6,8 @@ import UsersList from "./components/UsersList/UsersList";
 
 function App() {
     const [ showUsers, setShowUsers ] = useState( false );
+
+    const toggleUsers = () => { setShowUsers( ! showUsers ); };
     
     return (
         <div>
@@ -15,13 +17,14 @@ function App() {
             <Card name="Java" age={ 25 } />
 
             <hr />
-
             <Counter />
 
             <hr />
-            <button onClick={ () => setShowUsers( ! showUsers ) }> { showUsers ? "ocultar" : "mostrar"}
+            { showUsers && <UsersList /> }
+            
+            <button onClick={ toggleUsers }>
+                { showUsers ? "ocultar" : "mostrar" }
             </button>
-            { showUsers && <UsersList />}
         </div>);
 }
 
