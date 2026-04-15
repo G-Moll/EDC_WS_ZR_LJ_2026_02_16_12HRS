@@ -1,14 +1,13 @@
 NOTAS DEL BACKEND
 
-// intalar paquetes
+// 01) INSTALL MODULES/PACKAGES
 $ npm i mongodb
 $ npm i mongoose
 $ npm i dotenv
 
-// Crear archivo llamado .env en la carpeta raiz
+// 02) CREATE .env FILE ON ROOT DIRECTORY
 .env
 
-// con el contenido
+// 03) .env FILE CONTENTS
 MONGO_URI=
-
 PORT=8282
