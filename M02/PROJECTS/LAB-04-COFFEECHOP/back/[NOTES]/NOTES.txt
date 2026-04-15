@@ -5,6 +5,10 @@ $ npm i mongodb
 $ npm i mongoose
 $ npm i dotenv
 
-// Crear archivo de variables de entorno en la carpeta raiz
+// Crear archivo llamado .env en la carpeta raiz
 .env
 
+// con el contenido
+MONGO_URI=
+
+PORT=8282
