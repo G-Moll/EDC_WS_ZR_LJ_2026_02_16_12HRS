@@ -1,1 +1,10 @@
 NOTAS DEL BACKEND
+
+// intalar paquetes
+$ npm i mongodb
+$ npm i mongoose
+$ npm i dotenv
+
+// Crear archivo de variables de entorno en la carpeta raiz
+.env
+
