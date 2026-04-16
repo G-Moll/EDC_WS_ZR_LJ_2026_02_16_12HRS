@@ -1,0 +1,12 @@
+NOTAS DEL BACKEND
+
+// 01) INSTALL MODULES/PACKAGES
+$ npm i body-parser
+
+// 02) MODELS DIRECTORY AND FILES
+src/models/post.model.js
+
+// 03) UPDATE
+controllers/posts.controller.js
+routers/posts.router.js
+app.js

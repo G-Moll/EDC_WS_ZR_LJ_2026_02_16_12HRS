@@ -1,6 +1,7 @@
 const dotenv = require( 'dotenv' );
 const express = require( 'express' );
 const mongoose = require( 'mongoose' );
+const bodyParser = require( 'body-parser' );
 
 const postsRouter = require( './src/routers/posts.router' );
 const app = express();
@@ -17,7 +18,7 @@ mongoose
         console.log( "No se pudo establecer la Conexion", e );
     })
 
-
+app.use( bodyParser.json() );
 app.use( postsRouter );
 
 app.listen( port, () => {

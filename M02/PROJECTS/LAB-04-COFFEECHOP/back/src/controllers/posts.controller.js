@@ -1,3 +1,5 @@
+const Post = require( "../models/post.model" );
+
 let postsData = [
     {
         id: 1,
@@ -103,5 +105,18 @@ exports.getPost = ( request, response ) => {
         // data: ! postData ? "Post no encontrado" : [ postData ]
     });
 };
+
+exports.createPost = async ( request, response ) => {
+    try {
+        const post = new Post( request.body );
+        const result = await post.save();
+
+        console.log( request.body );
+        response.status( 200 ).json( { post: result } );
+    }
+    catch( e ) {
+        response.status( 400 ).json( { error: e } );
+    }
+}
 
 
