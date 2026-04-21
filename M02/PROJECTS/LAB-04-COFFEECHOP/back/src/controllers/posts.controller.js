@@ -83,27 +83,48 @@ let postsData = [
     }
 ];
 
-exports.getPosts = ( request, response ) => {
-    response.send({
-        message: "Get All Posts Endpoint..!",
-        data: postsData
-    });
+exports.getPosts = async ( request, response ) => {
+    
+    try {
+        const posts = await Post.find();
+        response.status( 200 ).json({
+            message: "Found posts",
+            data: posts,
+            count: posts.length
+        });
+    }
+    catch( e ) {
+        response.status( 500 ).json({
+            message: "Posts not found...",
+            error: e.message
+        });
+    }
 }
 
-exports.getPost = ( request, response ) => {
-    // console.log( postId, typeof postId );
+exports.getPost = async ( request, response ) => {
+    try {
+        const postId = request.params.id;
+        const post = await Post.findById( postId );
 
-    let postId = Number( request.params.id );
-    let postData = postsData.find( post => post.id === postId );
-
-    // let postId = request.params.id;
-    // let postData = postsData.find( post => post.id == postId );
-
-    response.send({
-        message: "Get Single Post Endpoint..!",
-        data: ! postData ? [] : [ postData ]
-        // data: ! postData ? "Post no encontrado" : [ postData ]
-    });
+        if( ! post ) {
+            return response.status( 404 ).json({
+                message: "Post not found...",
+                data: post
+                // data: null
+            });
+        }
+        
+        response.status( 200 ).json({
+            message: "Post found..!",
+            data: post
+        });
+    }
+    catch( e ) {
+        response.status( 500 ).json({
+            message: "Error Server...!",
+            error: e.message
+        });
+    }
 };
 
 exports.createPost = async ( request, response ) => {
