@@ -1,6 +1,11 @@
 const mongoose = require( 'mongoose' );
 
 const postSchema = new mongoose.Schema({
+    id: {
+        type: Number,
+        required: true,
+        unique: true
+    },
     title: {
         type: String,
         required: "title property is requited...",
@@ -12,6 +17,35 @@ const postSchema = new mongoose.Schema({
         required: "content property is requited...",
         minlength: 10,
         maxlength: 120
+    },
+    date: {
+        type: String,
+        required: true,
+        validate: {
+            validator: function( v ) {
+                return /^\d{4}-\d{2}-\d{2}$/.test( v );
+            },
+            message: props => `${ props.value } con coincide con el formato de fecha: YYYY-MM-DD`
+        }
+    },
+    time: {
+        type: String,
+        required: true,
+        validate: {
+            validator: function( v ) {
+                return /^\d{2}:\d{2}:\d{2}$/.test( v );
+            },
+            message: props => `${ props.value } con coincide con el formato de hora: HH:MM:SS`
+        }
+    },
+    products: {
+        type: [ String ],
+        required: true,
+        validate: {
+            validator: function( v ) {
+                return Array.isArray( v ) && v.length >= 0;
+            }
+        }
     }
 });
 
