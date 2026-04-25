@@ -25,7 +25,7 @@ const postSchema = new mongoose.Schema({
             validator: function( v ) {
                 return /^\d{4}-\d{2}-\d{2}$/.test( v );
             },
-            message: props => `${ props.value } con coincide con el formato de fecha: YYYY-MM-DD`
+            message: props => `${ props.value } Doesn't match with Date format: YYYY-MM-DD`
         }
     },
     time: {
@@ -35,7 +35,7 @@ const postSchema = new mongoose.Schema({
             validator: function( v ) {
                 return /^\d{2}:\d{2}:\d{2}$/.test( v );
             },
-            message: props => `${ props.value } con coincide con el formato de hora: HH:MM:SS`
+            message: props => `${props.value } Doesn't match with Time format: HH:MM:SS`
         }
     },
     products: {
