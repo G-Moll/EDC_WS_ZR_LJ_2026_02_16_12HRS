@@ -1,0 +1,49 @@
+// ································································
+// BACKEND
+// 01) Crear el modelo para Product (Antes Beverage)
+src/models/product.model.js
+
+const productSchema = new mongoose.Schema({
+    id: {
+        ...
+    },
+    name: {
+        ...
+    },
+    category: {
+        ...
+    },
+    description: {
+        ...
+    }
+}
+
+// 02) Adaptar las propiedades, según el json de productos
+// IMPORTANTE: La propiedad category, la deben asignar cada uno de uds. Esta propiedad en un futuro nos ayudará a filtrar los productos, puede ser que se puedan segmentar en: "bebidas" y "alimentos"
+    {
+        "id": 1,
+        "name": "Café Latte",
+        "category": "",
+        "description": "Suave espresso con leche vaporizada y una pequeña capa de espuma. Perfecto para comenzar el día."
+    }
+
+// 03) Actualizar las rutas y/o controladores
+controllers/product.controller.js
+routers/product.router.js
+app.js
+
+// 04) Probar en postman (con sus respectivos endpoints), que los productos se creen y se lean desde Atlas
+
+// Crear un producto nuevo
+POST    localhost:8080/products
+
+// Obtiene todos los productos
+GET     localhost:8080/products
+
+// Obtiene un producto específico
+GET     localhost:8080/products/123
+
+// ································································
+// FRONTEND
+// 01) Necesitamos al menos una página, que tenga un componente que muestre los productos
+// 02) Adaptar el ejercicio de useEffect, para mostrar datos de jsonplaceholder (en un futuro adaptaremos los endpoints de posts y products)
