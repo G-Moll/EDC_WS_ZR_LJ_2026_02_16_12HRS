@@ -1,14 +1,41 @@
 ································································
 // FRONTEND
-// 01) Crear un componente para mostrar una página productos y cards producto
-components
-    pages
-        Products
-            Products.jsx
-            Products.module.css
-    components
-        CardProduct
-            CardProduct.jsx
-            CardProduct.module.css
+// 01) Crear una página "Products" y un componente "CardsProduct"
+📁 front
+└── 📁 src
+    ├── 📁 components
+    │   └── 📁 CardProduct
+    │       ├── 📄 CardProduct.jsx
+    │       └── 📄 CardProduct.module.css
+    └── 📁 pages
+        └── 📁 Products
+            ├── 📄 Products.jsx
+            └── 📄 Products.module.css
 
-// 02) En la carpeta "public", crear una carpeta "data" que contenga los productos dentro de un archivo "products.json"
+
+// 02) En la carpeta "public", crear una carpeta "data" que contenga los productos en un archivo "products.json"
+📁 front
+└── 📁 public
+    └── 📁 data
+        └── 📄 products.json
+
+
+// 03) Estructura completa
+📁 front
+├── 📁 public
+│   └── 📁 data
+│       └── 📄 products.json
+│
+├── 📁 src
+│   ├── 📁 components
+│   │   └── 📁 CardProduct
+│   │       ├── 📄 CardProduct.jsx
+│   │       └── 📄 CardProduct.module.css
+│   ├── 📁 pages
+│   │   └── 📁 Products
+│   │       ├── 📄 Products.jsx
+│   │       └── 📄 Products.module.css
+│   │
+│   ├── 📄 App.jsx
+│   └── 📄 main.jsx
+└── 📄 index.html
