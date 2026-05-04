@@ -1,0 +1,14 @@
+································································
+// FRONTEND
+// 01) Crear un componente para mostrar una página productos y cards producto
+components
+    pages
+        Products
+            Products.jsx
+            Products.module.css
+    components
+        CardProduct
+            CardProduct.jsx
+            CardProduct.module.css
+
+// 02) En la carpeta "public", crear una carpeta "data" que contenga los productos dentro de un archivo "products.json"
