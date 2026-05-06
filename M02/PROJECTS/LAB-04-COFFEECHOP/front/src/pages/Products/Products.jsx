@@ -1,28 +1,34 @@
+import { useEffect, useState } from 'react';
 import CardProduct from '../../components/CardProduct/CardProduct';
 import styles from './Products.module.css';
 
-const products = [
-    {
-        "id": 1,
-        "name": "Café Latte",
-        "category": "beverages",
-        "description": "Suave espresso con leche vaporizada y una pequeña capa de espuma. Perfecto para comenzar el día."
-    },
-    {
-        "id": 2,
-        "name": "Pastel de Chocolate",
-        "category": "foods",
-        "description": "Delicioso bizcocho de chocolate oscuro con cobertura cremosa y chispas de cacao."
-    },
-    {
-        "id": 3,
-        "name": "Jugo Verde",
-        "category": "beverages",
-        "description": "Mezcla refrescante de espinaca, manzana verde, apio, pepino y un toque de limón."
-    },
-];
-
 function Products() {
+
+    const [ products, setProducts ] = useState( [] );
+    const [ loading, setLoading ] = useState( true );
+    const [ error, setError ] = useState( null );
+
+    useEffect( () => {
+        const fetchProducts = async () => {
+            try {
+                setLoading( true );
+                const response = await fetch( "http://localhost:5173/_data/products.json" );
+
+                if( ! response.ok ) throw new Error( `HTTP Error ${ response.status }`  );
+
+                const data = await response.json();
+                setProducts( data );
+            }
+            catch( e ) {
+                setError( e.message );
+                console.log( e )
+            }
+            finally {
+                setLoading( false );
+            }
+        }
+        fetchProducts();
+    }, []);
 
     return (
         <div className={ styles.products }>

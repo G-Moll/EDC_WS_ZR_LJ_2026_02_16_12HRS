@@ -1,0 +1,15 @@
+Back
+- Crear los endpoints para POST y GET
+
+Front
+- Crear componentes para las paginas
+    - Arreglo que contiene los datos de algunos posts (publicaciones)
+- Componentes para cada registro (Card)
+
+Hasta este punto no estan conectados el Front con el Back
+
+
+Paso 3
+Desde el font vamos a leer los datos que estan el el archivo products.json (front)
+- localhost:3000/data/products.json
+- hook: useEffect
