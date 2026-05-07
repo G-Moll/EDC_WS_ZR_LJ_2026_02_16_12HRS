@@ -1,6 +1,7 @@
 // IMPORT EXTERNAL/BUILT-IN MODULES
 const dns = require( 'node:dns' );
 const dotenv = require( 'dotenv' );
+const cors = require( 'cors' );
 const express = require( 'express' );
 const mongoose = require( 'mongoose' );
 const bodyParser = require( 'body-parser' );
@@ -12,6 +13,12 @@ const productsRouter = require( './src/routers/products.router' );
 // SETUP MODULES
 dns.setServers( [ '8.8.8.8', '8.8.4.4' ] );
 dotenv.config();
+
+const corsOptions = {
+    origin: "http://localhost:5173",
+    methods: [ "GET", "POST" ],
+    allowedHeaders: [ "Content-Type" ]
+};
 
 // SETUP APP
 const app = express();
@@ -26,6 +33,8 @@ mongoose
     .catch( ( e ) => {
         console.log( "Failure Connection...", e );
     })
+
+app.use( cors( corsOptions ) );
 
 app.use( bodyParser.json() );
 app.use( postsRouter );

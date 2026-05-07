@@ -12,12 +12,14 @@ function Products() {
         const fetchProducts = async () => {
             try {
                 setLoading( true );
-                const response = await fetch( "http://localhost:5173/_data/products.json" );
+                // const response = await fetch( "http://localhost:5173/_data/products.json" );
+                const response = await fetch( "http://localhost:8282/products" );
 
                 if( ! response.ok ) throw new Error( `HTTP Error ${ response.status }`  );
 
-                const data = await response.json();
-                setProducts( data );
+                const dataProducts = await response.json();
+                // console.log( dataProducts );
+                setProducts( dataProducts.data );
             }
             catch( e ) {
                 setError( e.message );
@@ -28,7 +30,7 @@ function Products() {
             }
         }
         fetchProducts();
-    }, []);
+    }, [] );
 
     return (
         <div className={ styles.products }>

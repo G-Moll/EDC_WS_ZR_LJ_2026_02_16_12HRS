@@ -1,0 +1,15 @@
+BACKEND
+ACTUALIZAR EL ARCHIVO "app.js"
+
+- Instalar paquetes (cors)
+    $ npm i cors
+- Configurar los paquetes (cors)
+    const corsConfig = { }
+- Utilizar el middleware
+    app.use( corsConfig )
+
+FRONTEND
+ACTUALIZAR EL ARCHIVO "Products.jsx" o donde se estén usando los datos de los productos
+- APUNTAR hacia los ENDPOINTS del back
+    GET del backend
+    localhost:3057/products
