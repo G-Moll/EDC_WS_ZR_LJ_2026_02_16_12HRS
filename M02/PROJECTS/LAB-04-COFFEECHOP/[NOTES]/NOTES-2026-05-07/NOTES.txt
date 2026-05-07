@@ -4,9 +4,9 @@ ACTUALIZAR EL ARCHIVO "app.js"
 - Instalar paquetes (cors)
     $ npm i cors
 - Configurar los paquetes (cors)
-    const corsConfig = { }
+    const corsOptions = { }
 - Utilizar el middleware
-    app.use( corsConfig )
+    app.use( corsOptions )
 
 FRONTEND
 ACTUALIZAR EL ARCHIVO "Products.jsx" o donde se estén usando los datos de los productos
