@@ -1,6 +1,26 @@
-································································
-// FRONTEND
-// 01) Crear una página "Products" y un componente "CardsProduct"
+// ································································
+NOTAS GENERALES
+01) CREAR LA ESTRUCTURA DEL PROYECTO FRONTEND USANDO REACT (Y VITE), PARA POSTERIORMENTE INTEGRALO CON EL BACKEND
+    01.01) Estructura general
+        - Pages
+        - Components
+    01.02) Adaptar la Estructura de diseño de Café Artesanal
+        - Mockup-01-Landing-Coffee.png
+
+// ································································
+NOTAS DEL FRONTEND
+
+01) Crear proyecto de React usando Vite
+// DENTRO de la carpeta contenedora del proyecto (Café Artesanal)
+$ npx create-vite@latest CafeFront
+
+01.01) Seleccionar las siguientes opciones
+    - Vanilla
+    - JavaScript
+    - Install with npm and start now
+
+// ················
+02.01) Crear una página "Products" y un componente "CardsProduct"
 📁 front
 └── 📁 src
     ├── 📁 components
@@ -13,14 +33,17 @@
             └── 📄 Products.module.css
 
 
-// 02) En la carpeta "public", crear una carpeta "data" que contenga los productos en un archivo "products.json"
+// ················
+02.02) En la carpeta "public", crear una carpeta "data" que contenga los productos en un archivo "products.json"
+
 📁 front
 └── 📁 public
     └── 📁 data
         └── 📄 products.json
 
 
-// 03) Estructura completa
+// ················
+02.03) Estructura completa
 📁 front
 ├── 📁 public
 │   └── 📁 data

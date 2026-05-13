@@ -1,18 +1,22 @@
-IMPORTANTE:
-CADA PROYECTO DEBE CORRER EN SU RESPECTIVA CONSOLA
+// ································································
+NOTAS GENERALES
+1) CADA PROYECTO DEBE CORRER EN SU RESPECTIVA CONSOLA
+2) EN ESTE PUNTO YA ESTARÁN CONECTADOS EL FRONTEND Y EL BACKEND
 
-BACKEND
+// ································································
+NOTAS DEL BACKEND
 ACTUALIZAR EL ARCHIVO "app.js"
 
-- Instalar paquetes (cors)
+1) Instalar paquetes (cors)
     $ npm i cors
-- Configurar los paquetes (cors)
+2) Configurar los paquetes (cors)
     const corsOptions = { }
-- Utilizar el middleware
+3) Utilizar el middleware
     app.use( corsOptions )
 
-FRONTEND
-ACTUALIZAR EL ARCHIVO "Products.jsx" o donde se estén usando los datos de los productos
-- APUNTAR hacia los ENDPOINTS del back
-    GET del backend
-    localhost:3057/products
+// ································································
+NOTAS DEL FRONTEND
+1) ACTUALIZAR EL ARCHIVO "Products.jsx" o donde se estén usando los datos de los productos
+    - APUNTAR hacia los ENDPOINTS del back
+        GET del backend
+        localhost:3057/products

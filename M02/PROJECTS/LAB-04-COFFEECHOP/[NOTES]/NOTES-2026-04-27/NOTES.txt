@@ -1,5 +1,5 @@
 // ································································
-// BACKEND
+NOTAS DEL BACKEND
 // 01) Crear el modelo para Product (Antes Beverage)
 src/models/product.model.js
 

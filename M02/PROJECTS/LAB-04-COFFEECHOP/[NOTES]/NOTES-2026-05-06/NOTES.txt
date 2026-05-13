@@ -1,15 +1,23 @@
-Back
-- Crear los endpoints para POST y GET
+// ································································
+NOTAS GENERALES
+1) DE FORMA TEMPARORAL, DESDE EL FRONTEND SE TOMAN LOS DATOS QUE ESTÁN EN UN ARCHIVO JSON
+2) EL OBJETIVO ES PROBAR QUE LOS COMPONENTES Products.jsx Y CardProduct.jsx MUESTREN LOS DATOS DEL ARCHIVO LOCAL JSON
 
-Front
-- Crear componentes para las paginas
+
+// ································································
+NOTAS DEL BACKEND
+1) Crear los endpoints para POST y GET
+    - Controllers
+    - Routers
+
+// ································································
+NOTAS DEL FRONTEND
+1) Crear componentes para las paginas
     - Arreglo que contiene los datos de algunos posts (publicaciones)
-- Componentes para cada registro (Card)
+2) Componentes para cada registro de la DB (Card)
 
 Hasta este punto no estan conectados el Front con el Back
 
-
-Paso 3
-Desde el font vamos a leer los datos que estan el el archivo products.json (front)
+3) Desde el font vamos a leer los datos que estan el el archivo products.json (front)
 - localhost:3000/data/products.json
 - hook: useEffect
