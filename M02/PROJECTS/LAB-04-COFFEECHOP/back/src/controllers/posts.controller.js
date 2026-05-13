@@ -20,7 +20,6 @@ exports.getPosts = async ( request, response ) => {
 
 exports.getPost = async ( request, response ) => {
     try {
-        // Actualización para que reconozca "_id"
         const postId = request.params._id;
         const post = await Post.findById( postId );
 
@@ -60,6 +59,8 @@ exports.createPost = async ( request, response ) => {
 exports.updatePost = async ( request, response ) => {
     try {
         const { _id } = request.body;
+        console.log( _id );
+        console.log( request.body );
 
         const post = await Post.findByIdAndUpdate(
             _id,
@@ -69,8 +70,10 @@ exports.updatePost = async ( request, response ) => {
                 runValidators: true
             }
         );
+
+        console.log( post );
         
-        if( !post ) {
+        if( ! post ) {
             return response
                 .status( 404 )
                 .json( { error: "Post no encontrado" } );
@@ -90,7 +93,6 @@ exports.updatePost = async ( request, response ) => {
 
 exports.deletePost = async ( request, response ) => {
     try {
-        // Toma el parametro del url: _id
         const postId = request.params._id;
         const deletedPost = await Post.findOneAndDelete( { _id: postId } );
 
