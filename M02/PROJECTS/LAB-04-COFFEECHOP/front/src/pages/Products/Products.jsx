@@ -34,6 +34,7 @@ function Products() {
     }, [] );
 
     return (
+    <>
         <div className={ styles.products }>
             <h1>Productos</h1>
             <div>
@@ -48,6 +49,7 @@ function Products() {
                 ))}
             </div>
         </div>
+    </>
     );
 }
 
