@@ -4,3 +4,12 @@ node_modules/
 *.env
 .env
 
+# CUSTOM DIRECTORIES
+drafts/
+draft/
+_drafts/
+_draft/
+*/drafts/
+*/draft/
+*/_drafts/
+*/_draft/
