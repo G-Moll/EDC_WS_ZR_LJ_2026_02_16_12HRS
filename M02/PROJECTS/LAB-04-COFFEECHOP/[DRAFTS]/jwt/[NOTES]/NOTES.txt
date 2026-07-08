@@ -1,0 +1,34 @@
+// Endpoints
+api/products
+    { name: "cafe"... }
+
+api/roles
+    { name: "Admin"... }
+
+api/users
+    { name: "Joshua"... }
+
+api/posts
+    { title: "Cafe latte..."... }
+
+// Autenticación y Autorización
+auth
+    authentication JWT
+        René OP     Facebook
+    authorization
+        Roles       Admin
+                        Alex            ventas
+                        John
+                    Seller
+                        Peter           ventas, reportes, pedidos
+                        Paul
+                    Customer
+                        HackerOne
+                        HackerTwo       reportes, pedidos, dar de baja productos
+
+        Permisions
+        Roles & Permisions
+
+
+// JWT JSON Web Tokens
+ASDHLakjshdLAKJSDHLakhd23132asdAFasf
