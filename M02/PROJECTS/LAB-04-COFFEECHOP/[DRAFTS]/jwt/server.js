@@ -14,8 +14,9 @@ app.get( "/", ( req, res ) => {
     res.send( "Hello Joshua..!" );
 } );
 
-app.get( "/api", ( req, res ) => {
+app.get( "/api", validateAccessToken, ( req, res ) => {
     res.json( {
+        username: req.user,
         posts: [
             { id: 1, title: "Post Uno", content: "Contenido del post uno" },
             { id: 2, title: "Post Dos", content: "Contenido del post dos" },
@@ -32,7 +33,7 @@ app.get( "/login", ( req, res ) => {
 
         <body>
             <form method="POST" action="/auth">
-                Usuario: <input type="text" name="text" /><br />
+                Usuario: <input type="text" name="username" /><br />
                 Contraseña: <input type="password" name="password" /><br />
                 <input type="submit" value="Iniciar sesión" />
             </form>
@@ -41,13 +42,36 @@ app.get( "/login", ( req, res ) => {
 } );
 
 app.post( "/auth", ( req, res ) => {
-    res.send( "Data from form..." );
+    const { username, password } = req.body;
+
+    const user = { username: username };
+    const accessToken = generateAccessToken( user );
+
+    res
+        .header( "authorization", accessToken )
+        .json( { message: "Auth user", token: accessToken }  )        ;
 } );
 
 function generateAccessToken( encriptionData ) {
+    return jwt.sign(encriptionData, process.env.JWT_SECRET, { expiresIn: "5m" } );
 }
 
 function validateAccessToken( req, res, next ) {
+    const accessToken = req.headers[ "authorization" ] || req.query.accessToken;
+    console.log( "ACCESS TOKEN", accessToken );
+
+    if( ! accessToken  ) res.json( { message: "Access denied: Token not found" } );
+
+    jwt.verify( accessToken, process.env.JWT_SECRET, ( error, user ) => {
+        if( error ) {
+            res.json( { message: "Access denied: Token expired or incorrect" })
+        }
+        else {
+            req.user = user;
+            next();
+        }
+    });
+
 }
 
 app.listen( 3000, () => {
