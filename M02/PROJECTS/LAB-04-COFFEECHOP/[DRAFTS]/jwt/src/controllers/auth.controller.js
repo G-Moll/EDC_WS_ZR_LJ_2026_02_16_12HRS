@@ -4,7 +4,11 @@ const jwt = require( "jsonwebtoken" );
 const UserModel = require( "../models/UserModel" );
 
 const generateAccessToken = ( encriptionData ) => {
-    return jwt.sign( encriptionData, process.env.JWT_SECRET, { expiresIn: "5m" } );
+    return jwt.sign(
+        encriptionData,
+        process.env.JWT_SECRET,
+        { expiresIn: "5m"
+    } );
 };
 
 const authController = {

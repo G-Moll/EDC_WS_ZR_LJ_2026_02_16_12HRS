@@ -32,3 +32,8 @@ auth
 
 // JWT JSON Web Tokens
 ASDHLakjshdLAKJSDHLakhd23132asdAFasf
+
+
+// Endpoints
+http://localhost:3000/auth/token
+http://localhost:3000/auth/api

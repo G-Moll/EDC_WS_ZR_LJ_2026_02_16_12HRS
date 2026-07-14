@@ -7,7 +7,7 @@ const authRouter = express.Router();
 // Rutas públicas
 authRouter.get( "/", authController.home );
 authRouter.get( "/login", authController.showLogin );
-authRouter.post( "/auth", authController.authenticate );
+authRouter.post( "/token", authController.authenticate );
 
 // Rutas protegidas
 authRouter.get( "/api", validateAccessToken, authController.getPosts );
