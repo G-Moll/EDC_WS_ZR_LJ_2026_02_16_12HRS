@@ -60,12 +60,12 @@ app.use( ( error, req, res, next ) => {
 
 async function startServer() {
     try {
-        console.log("🚀 Iniciando servidor...");
-        console.log("📡 Conectando a base de datos...");
+        console.log( "🚀 Iniciando servidor..." );
+        console.log( "📡 Conectando a base de datos..." );
         
         await initializeDatabase();
         
-        console.log("✅ Base de datos conectada correctamente");
+        console.log( "✅ Base de datos conectada correctamente" );
         
         try {
             const db = getDatabase();
