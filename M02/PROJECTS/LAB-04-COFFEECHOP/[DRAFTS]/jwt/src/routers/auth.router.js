@@ -2,14 +2,14 @@ const express = require( "express" );
 const authController = require( "../controllers/auth.controller" );
 const { validateAccessToken } = require( "../middlewares/auth.middleware" );
 
-const router = express.Router();
+const authRouter = express.Router();
 
 // Rutas públicas
-router.get( "/", authController.home );
-router.get( "/login", authController.showLogin );
-router.post( "/auth", authController.authenticate );
+authRouter.get( "/", authController.home );
+authRouter.get( "/login", authController.showLogin );
+authRouter.post( "/auth", authController.authenticate );
 
 // Rutas protegidas
-router.get( "/api", validateAccessToken, authController.getPosts );
+authRouter.get( "/api", validateAccessToken, authController.getPosts );
 
-module.exports = router;
+module.exports = { authRouter };

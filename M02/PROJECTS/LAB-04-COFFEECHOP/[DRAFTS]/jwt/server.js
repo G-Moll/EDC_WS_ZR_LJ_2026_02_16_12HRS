@@ -1,6 +1,6 @@
 const express = require( "express" );
 const dotenv = require( "dotenv" );
-const authRoutes = require( "./src/routers/auth.router" );
+const apiRouter = require( "./src/routers/api.router" );
 
 dotenv.config();
 
@@ -11,7 +11,7 @@ app.use( express.urlencoded( { extended: false } ) );
 app.use( express.json() );
 
 // Rutas
-app.use( "/", authRoutes );
+app.use( "/", apiRouter );
 
 app.listen( 3000, () => {
     console.log( "Server Running..." );
