@@ -5,7 +5,11 @@ class UserModel {
         { id: 2, username: "Joshua", password: "JHS37" }
     ];
 
-    static findByUsername( username, password ) {
+    static getUsers( req, res ) {
+        return this.users;
+    }
+
+    static findByName( username, password ) {
         return this.users.find( 
             user => user.username === username && user.password === password
         );
@@ -20,7 +24,9 @@ class UserModel {
             id: this.users.length + 1,
             ...userData
         };
+
         this.users.push( newUser );
+        
         return newUser;
     }
 }

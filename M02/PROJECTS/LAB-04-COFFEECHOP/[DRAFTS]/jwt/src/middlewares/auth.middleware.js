@@ -7,7 +7,7 @@ const authMiddleware = {
 
         if( ! accessToken ) {
             return res
-                .status(401)
+                .status( 401 )
                 .json( { message: "Access denied: Token not found" } );
         }
 
